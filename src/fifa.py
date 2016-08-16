@@ -27,8 +27,8 @@ def parse(video, url):
         )
     return event_dict_list
 
-folder = "2014世界盃"
-video_name = "128848_3500K_384K_1920x1080_00-00-01_14511_SH14052001-068.mp4"
-fifa_url = "http://www.fifa.com/worldcup/matches/ \
-            round=255959/match=300186501/live-blog.html"
-print(parse(folder + "/" + video_name, fifa_url))
+# folder = u"2014世界盃"
+# video_name = "128848_3500K_384K_1920x1080_00-00-01_14511_SH14052001-068.mp4"
+# fifa_url = "http://www.fifa.com/worldcup/matches/" + \
+#            "round=255959/match=300186501/live-blog.html"
+# print(parse(folder + "/" + video_name, fifa_url))
