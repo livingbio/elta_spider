@@ -23,34 +23,36 @@ def test():
             for event_dict in event_dict_list:
                 if isinstance(event_dict, dict):
                     video = event_dict["video"]
-                    if isinstance(video, str):
+                    if isinstance(video, unicode):
                         if not video.endswith(".mp4"):
                             print ("Video name is not correct")
                             schema_correct = False
                             break
                     else:
-                        print ("The type of video is wrong")
+                        print ("Type of video is wrong")
                         schema_correct = False
                         break
 
                     event = event_dict["event"]
-                    if isinstance(event, str):
+                    if isinstance(event, unicode):
                         if not event in event_list:
                             print ("Unknown event")
                             schema_correct = False
                             break
                     else:
-                        print ("The type of event is wrong")
+                        print ("Type of event is wrong")
                         schema_correct = False
                         break
 
                     message = event_dict["message"]
-                    if not isinstance(message, str):
+                    if not isinstance(message, unicode):
+                        print ("Type of message is wrong")
                         schema_correct = False
                         break
 
                     time = event_dict["time"]
-                    if not isinstance(time, str):
+                    if not isinstance(time, unicode):
+                        print ("Type of time is wrong")
                         schema_correct = False
                         break
 
@@ -97,8 +99,6 @@ def test():
         # Test result content
         filepath_target = path + '/target/target_1'
         test_content(filepath_result, filepath_target)
-    else:
-        print ("The schema of the result is not correct.")
 
 
 test()
