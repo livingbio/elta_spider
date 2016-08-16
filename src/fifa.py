@@ -7,6 +7,7 @@
 
 from bs4 import BeautifulSoup
 import requests
+import json
 
 
 def parse(video, url):
@@ -16,7 +17,6 @@ def parse(video, url):
     soup = BeautifulSoup(sourse_code, "html.parser")
 
     event_list = soup.select(".event-wrap")
-    print(len(event_list))
     event_dict_list = []
     for event in event_list:
         event_dict_list.append(
@@ -27,8 +27,13 @@ def parse(video, url):
         )
     return event_dict_list
 
-# folder = u"2014世界盃"
-# video_name = "128848_3500K_384K_1920x1080_00-00-01_14511_SH14052001-068.mp4"
-# fifa_url = "http://www.fifa.com/worldcup/matches/" + \
-#            "round=255959/match=300186501/live-blog.html"
-# print(parse(folder + "/" + video_name, fifa_url))
+
+def main():
+    import sys
+    f, v, u, o = sys.argv
+    event_list = parse(v, u)
+    with open(o, 'w') as ouput_file:
+        json.dump(event_list, ouput_file)
+
+if __name__ == "__main__":
+    main()
