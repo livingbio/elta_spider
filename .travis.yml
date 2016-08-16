@@ -1,0 +1,7 @@
+language: python
+cache: pip
+install:
+- pip install requirements.txt
+script:
+- py.test src
+
