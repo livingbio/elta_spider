@@ -1,3 +1,19 @@
+序
+---
+愛爾達這部分主要目的是要我們建立足球的訓練資料,
+目標是達成未來有足球影片我們可以用機器自動分出事件區間
+
+目標
+---
+基本上我們目的就是要拿到事件對應到的影片
+像是射門我希望能夠拿到射門影片
+角球就角球影片
+
+input: 足球比賽影片
+output: 事件: 影片
+
+
+
 site: http://www.fifa.com/mensolympic/matches/round=272245/match=300355586/index.html#nosticky
 
 video: https://console.cloud.google.com/storage/browser/gliacloud-elta/?project=living-bio
