@@ -1,0 +1,22 @@
+icon| name| desc| example| pattern| period
+---|---|---|---|---|---|
+<img width="16" alt="score" src="https://cloud.githubusercontent.com/assets/19202399/17661813/11821520-6314-11e6-9144-7e8ba8629f40.png">| goal| 進球| Serge GNABRY (Germany) scores!! | <人名>(<國家>)scores!!| 
+<img width="16" alt="red_ball" src="https://cloud.githubusercontent.com/assets/19202399/17662132/16daaada-6316-11e6-879e-ac9ef7100e25.png">| goal_own| 烏龍球| scores an own goal| <人名>(<國家>)scores an own goal| 
+<img width="16" alt="yellow_card" src="https://cloud.githubusercontent.com/assets/19202399/17662285/ffd7f17a-6316-11e6-89b6-fb4ca97841e7.png">| yellow_card| 黃牌| Maximilian MEYER (Germany) is booked by the referee. 或 BARKLEY (England) is yellow carded.| <人名>(<國家>)(犯規內容/ is yellow carded)|
+<img width="16" alt="red_card" src="https://cloud.githubusercontent.com/assets/19202399/17661826/21dd4516-6314-11e6-98a0-36898ca0e67f.png">| red_card| 紅牌| M. PEREIRA (Uruguay) is given his marching orders.| <人名>(<國家>)(犯規內容)| 
+<img width="16" alt="yellow_red" src="https://cloud.githubusercontent.com/assets/19202399/17661830/254ab95e-6314-11e6-9932-9c918c5ae419.png">| yellow_card_second| 兩張黃牌變一張紅牌| W. PALACIOS (Honduras) is booked for the second time and receives a red card!| <人名>(<國家>) is booked for the second time and receives a red card!| 
+<img width="16" alt="green_red" src="https://cloud.githubusercontent.com/assets/19202399/17661836/2827cf68-6314-11e6-9957-721ff9f1c51b.png">| substitution_in_out| 換人| SERGIO OLIVEIRA (in) comes off the bench to replace CHICO RAMOS (out) (Portugal)| <上場球員> (in) comes off the bench to replace <下場球員> (out) (<國家>)| 
+<img width="16" alt="down" src="https://cloud.githubusercontent.com/assets/19202399/17661841/2d1fab80-6314-11e6-87a4-940f8d64f7ce.png">| substitution_out| 下場| | | 
+<img width="16" alt="up" src="https://cloud.githubusercontent.com/assets/19202399/17661845/2fc5c338-6314-11e6-8867-e3f6f5ee12cf.png">| substitution_in| 上場| | | 
+<img width="16" alt="1_green" src="https://cloud.githubusercontent.com/assets/19202399/17661910/a0e55678-6314-11e6-8ffc-1c96ea1b918f.png">| first_start| 比賽開始| The match kicks off.| | 
+<img width="16" alt="1_red" src="https://cloud.githubusercontent.com/assets/19202399/17661850/3c5e458e-6314-11e6-9dba-262c226bed9a.png">| first_end| 上半場結束| The referee brings the first half to an end.| | 
+<img width="16" alt="2_green" src="https://cloud.githubusercontent.com/assets/19202399/17661859/427ec966-6314-11e6-9f48-088c770c7a35.png">| second_start| 下半場開始| The second half kicks off.| | 
+<img width="16" alt="2_red" src="https://cloud.githubusercontent.com/assets/19202399/17662238/c9bc1e86-6316-11e6-8295-ec3e0dc5a7cc.png">| second_end| 比賽結束| The final whistle sounds.| | 
+<img width="16" alt="3_green" src="https://cloud.githubusercontent.com/assets/19202399/17662546/bfa8026e-6318-11e6-9b26-2f7abbe18f33.png">| third_start| 延長賽開始| | | 
+<img width="16" alt="3_red" src="https://cloud.githubusercontent.com/assets/19202399/17662556/cef87d7a-6318-11e6-925e-92f014a5ea4d.png">| third_end| 延長賽結束| | | 
+<img width="16" alt="green_p" src="https://cloud.githubusercontent.com/assets/19202399/17662206/870c1abe-6316-11e6-9cca-a5443925d821.png">| penalty| 罰中/十二碼進球| SON Heungmin (Korea Republic) successfully converts the penalty! 或 (0 - 0) Morgan BRIAN (USA) successfully converts the penalty!| <比分><人名>(<國家>) successfully converts the penalty!| 
+<img width="16" alt="red_p" src="https://cloud.githubusercontent.com/assets/19202399/17662061/7fa30f54-6315-11e6-8696-588685c056e0.png">| penalty_wrong| 罰球未中/十二碼未進| (0 - 0) Christen PRESS (USA) misses from the penalty spot! 或 (0 - 0) Alex MORGAN (USA) sees his penalty saved by the goalkeeper.| <比分><人名>(<國家>)(原因)| 
+<img width="16" alt="stop" src="https://cloud.githubusercontent.com/assets/19202399/17662522/a4f0bd6c-6318-11e6-89dc-be013c22ece5.png">| | 暫停| | | 
+<img width="16" alt="white_card" src="https://cloud.githubusercontent.com/assets/19202399/17662690/0e53baf6-631a-11e6-8bb0-cf4a64cbc254.png">| match_report| match_report| | | 
+<img width="16" alt="green_2p" src="https://cloud.githubusercontent.com/assets/19202399/17662834/fe63fa56-631a-11e6-999b-28b3cb10a1c9.png">| | | | 
+<img width="16" alt="red_2p" src="https://cloud.githubusercontent.com/assets/19202399/17662837/0680561c-631b-11e6-9356-e5c9f061e20d.png">| | | | 
