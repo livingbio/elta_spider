@@ -28,7 +28,10 @@ def parse(video, fifa_url, first_offset, second_offset, overtime_offset=0, outpu
             continue
 
         else:
-            time = int(time) * 60
+            try:
+                time = int(time) * 60
+            except:
+                continue
 
         if time >= 90 * 60:
             real_time = time + overtime_offset - 90*60
@@ -50,7 +53,6 @@ def parse(video, fifa_url, first_offset, second_offset, overtime_offset=0, outpu
 
     with open(f_path, 'w+') as f:
         for index in real_indexs:
-            print index
             f.write(json.dumps(index))
             f.write('\n')
 
@@ -59,5 +61,5 @@ def parse(video, fifa_url, first_offset, second_offset, overtime_offset=0, outpu
 if __name__ == '__main__':
     if len(sys.argv) not in [5, 6]:
         print 'python index {{video}} {{fifa_url}} {{offset_上半場}} {{offset 下半場}} {{offset 延長賽}}'
-
+    print sys.argv 
     parse(*sys.argv[1:])

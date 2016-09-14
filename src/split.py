@@ -28,7 +28,7 @@ def download_file(file_name, output_path):
     return tmp_name
 
 
-def process(index_file, output_path='event_list'):
+def process(index_file, output_path='el'):
     video_file_name = os.path.basename(index_file).replace(".index", '')
     video_file = download_file(video_file_name, 'tmp')
     
@@ -54,7 +54,7 @@ def process(index_file, output_path='event_list'):
                     event_video = "{}.mp4".format(event_key)
                     event_video_path = "{}/{}".format(output_path, event_video)
                     
-                    cmd = "ffmpeg -y -i {} -ss {} -t {} -acodec copy -vcodec copy {}".format(video_file, st, duration, event_video_path)
+                    #cmd = "ffmpeg -y -i {} -ss {} -t {} -acodec copy -vcodec copy {}".format(video_file, st, duration, event_video_path)
                     os.system(cmd)
 
                     new_info = {}
